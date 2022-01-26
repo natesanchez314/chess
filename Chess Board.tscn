@@ -1,0 +1,515 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Chess State.gd" type="Script" id=1]
+[ext_resource path="res://Chess Piece/Black/BlackBishop.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Chess Piece/Black/BlackPawn.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Chess Piece/Black/BlackKnight.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Chess Piece/Black/BlackQueen.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Chess Piece/Black/BlackKing.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Chess Piece/Black/BlackRook.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Chess Piece/White/WhiteBishop.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Chess Piece/White/WhiteKing.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Chess Piece/White/WhiteQueen.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Chess Piece/White/WhiteKnight.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Chess Piece/White/WhiteRook.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Chess Piece/White/WhitePawn.tscn" type="PackedScene" id=13]
+
+[node name="Chess Board" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Board" type="Node" parent="."]
+
+[node name="BackGround" type="ColorRect" parent="Board"]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 576.0
+margin_bottom = 576.0
+color = Color( 0.588235, 0.509804, 0.666667, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround2" type="ColorRect" parent="Board"]
+margin_left = 128.0
+margin_top = 64.0235
+margin_right = 192.0
+margin_bottom = 128.024
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround3" type="ColorRect" parent="Board"]
+margin_left = 256.0
+margin_top = 64.0235
+margin_right = 320.0
+margin_bottom = 128.024
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround4" type="ColorRect" parent="Board"]
+margin_left = 384.0
+margin_top = 64.0235
+margin_right = 448.0
+margin_bottom = 128.024
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround5" type="ColorRect" parent="Board"]
+margin_left = 512.0
+margin_top = 64.0235
+margin_right = 576.0
+margin_bottom = 128.024
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround6" type="ColorRect" parent="Board"]
+margin_left = 64.0002
+margin_top = 128.024
+margin_right = 128.0
+margin_bottom = 192.024
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround7" type="ColorRect" parent="Board"]
+margin_left = 192.0
+margin_top = 128.024
+margin_right = 256.0
+margin_bottom = 192.024
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround8" type="ColorRect" parent="Board"]
+margin_left = 320.0
+margin_top = 128.024
+margin_right = 384.0
+margin_bottom = 192.024
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround9" type="ColorRect" parent="Board"]
+margin_left = 448.0
+margin_top = 128.024
+margin_right = 512.0
+margin_bottom = 192.024
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround10" type="ColorRect" parent="Board"]
+margin_left = 128.0
+margin_top = 192.024
+margin_right = 192.0
+margin_bottom = 256.023
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround11" type="ColorRect" parent="Board"]
+margin_left = 256.0
+margin_top = 192.024
+margin_right = 320.0
+margin_bottom = 256.023
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround12" type="ColorRect" parent="Board"]
+margin_left = 384.0
+margin_top = 192.0
+margin_right = 448.0
+margin_bottom = 256.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround13" type="ColorRect" parent="Board"]
+margin_left = 512.0
+margin_top = 192.0
+margin_right = 576.0
+margin_bottom = 256.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround14" type="ColorRect" parent="Board"]
+margin_left = 64.0002
+margin_top = 256.0
+margin_right = 128.0
+margin_bottom = 320.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround15" type="ColorRect" parent="Board"]
+margin_left = 192.0
+margin_top = 256.0
+margin_right = 256.0
+margin_bottom = 320.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround16" type="ColorRect" parent="Board"]
+margin_left = 320.0
+margin_top = 256.0
+margin_right = 384.0
+margin_bottom = 320.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround17" type="ColorRect" parent="Board"]
+margin_left = 448.0
+margin_top = 256.0
+margin_right = 512.0
+margin_bottom = 320.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround18" type="ColorRect" parent="Board"]
+margin_left = 128.0
+margin_top = 320.0
+margin_right = 192.0
+margin_bottom = 384.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround19" type="ColorRect" parent="Board"]
+margin_left = 256.0
+margin_top = 320.0
+margin_right = 320.0
+margin_bottom = 384.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround20" type="ColorRect" parent="Board"]
+margin_left = 384.0
+margin_top = 320.0
+margin_right = 448.0
+margin_bottom = 384.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround21" type="ColorRect" parent="Board"]
+margin_left = 512.0
+margin_top = 320.0
+margin_right = 576.0
+margin_bottom = 384.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround22" type="ColorRect" parent="Board"]
+margin_left = 64.0002
+margin_top = 384.0
+margin_right = 128.0
+margin_bottom = 448.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround23" type="ColorRect" parent="Board"]
+margin_left = 192.0
+margin_top = 384.0
+margin_right = 256.0
+margin_bottom = 448.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround24" type="ColorRect" parent="Board"]
+margin_left = 320.0
+margin_top = 384.0
+margin_right = 384.0
+margin_bottom = 448.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround25" type="ColorRect" parent="Board"]
+margin_left = 448.0
+margin_top = 384.0
+margin_right = 512.0
+margin_bottom = 448.0
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround26" type="ColorRect" parent="Board"]
+margin_left = 128.0
+margin_top = 447.977
+margin_right = 192.0
+margin_bottom = 511.977
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround27" type="ColorRect" parent="Board"]
+margin_left = 256.0
+margin_top = 447.977
+margin_right = 320.0
+margin_bottom = 511.977
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround28" type="ColorRect" parent="Board"]
+margin_left = 384.0
+margin_top = 447.977
+margin_right = 448.0
+margin_bottom = 511.977
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround29" type="ColorRect" parent="Board"]
+margin_left = 512.0
+margin_top = 448.023
+margin_right = 576.0
+margin_bottom = 512.023
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround30" type="ColorRect" parent="Board"]
+margin_left = 64.0002
+margin_top = 511.977
+margin_right = 128.0
+margin_bottom = 575.977
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround31" type="ColorRect" parent="Board"]
+margin_left = 192.0
+margin_top = 512.023
+margin_right = 256.0
+margin_bottom = 576.023
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround32" type="ColorRect" parent="Board"]
+margin_left = 320.0
+margin_top = 512.023
+margin_right = 384.0
+margin_bottom = 576.023
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround33" type="ColorRect" parent="Board"]
+margin_left = 448.0
+margin_top = 511.977
+margin_right = 512.0
+margin_bottom = 575.977
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Black" type="Node" parent="."]
+
+[node name="BlackBishop" parent="Black" instance=ExtResource( 2 )]
+position = Vector2( 224, 96 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackBishop2" parent="Black" instance=ExtResource( 2 )]
+position = Vector2( 416, 96 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackKing" parent="Black" instance=ExtResource( 6 )]
+position = Vector2( 352, 96.0235 )
+scale = Vector2( 0.481202, 0.481203 )
+
+[node name="BlackKnight" parent="Black" instance=ExtResource( 4 )]
+position = Vector2( 160, 96.0117 )
+scale = Vector2( 0.481203, 0.481026 )
+
+[node name="BlackKnight2" parent="Black" instance=ExtResource( 4 )]
+position = Vector2( 480, 96 )
+scale = Vector2( 0.481203, 0.481026 )
+
+[node name="BlackPawn" parent="Black" instance=ExtResource( 3 )]
+position = Vector2( 96, 160.023 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackPawn2" parent="Black" instance=ExtResource( 3 )]
+position = Vector2( 160, 160 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackPawn3" parent="Black" instance=ExtResource( 3 )]
+position = Vector2( 224, 160 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackPawn4" parent="Black" instance=ExtResource( 3 )]
+position = Vector2( 288, 160 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackPawn5" parent="Black" instance=ExtResource( 3 )]
+position = Vector2( 352, 160 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackPawn6" parent="Black" instance=ExtResource( 3 )]
+position = Vector2( 416, 160 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackPawn7" parent="Black" instance=ExtResource( 3 )]
+position = Vector2( 480, 160 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackPawn8" parent="Black" instance=ExtResource( 3 )]
+position = Vector2( 544, 160 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackQueen" parent="Black" instance=ExtResource( 5 )]
+position = Vector2( 288, 96 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="BlackRook" parent="Black" instance=ExtResource( 7 )]
+position = Vector2( 96, 95.9883 )
+scale = Vector2( 0.481203, 0.48138 )
+
+[node name="BlackRook2" parent="Black" instance=ExtResource( 7 )]
+position = Vector2( 544, 96 )
+scale = Vector2( 0.481203, 0.48138 )
+
+[node name="White" type="Node" parent="."]
+
+[node name="WhiteBishop" parent="White" instance=ExtResource( 8 )]
+position = Vector2( 224, 544.012 )
+scale = Vector2( 0.481203, 0.481027 )
+
+[node name="WhiteBishop2" parent="White" instance=ExtResource( 8 )]
+position = Vector2( 416, 544 )
+scale = Vector2( 0.481203, 0.481027 )
+
+[node name="WhiteKing" parent="White" instance=ExtResource( 9 )]
+position = Vector2( 352, 544 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhiteKnight" parent="White" instance=ExtResource( 11 )]
+position = Vector2( 160, 544.012 )
+scale = Vector2( 0.481203, 0.48138 )
+
+[node name="WhiteKnight2" parent="White" instance=ExtResource( 11 )]
+position = Vector2( 480, 544 )
+scale = Vector2( 0.481203, 0.48138 )
+
+[node name="WhitePawn" parent="White" instance=ExtResource( 13 )]
+position = Vector2( 96.0001, 479.977 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhitePawn2" parent="White" instance=ExtResource( 13 )]
+position = Vector2( 160, 479.977 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhitePawn3" parent="White" instance=ExtResource( 13 )]
+position = Vector2( 224, 479.977 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhitePawn4" parent="White" instance=ExtResource( 13 )]
+position = Vector2( 288, 479.977 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhitePawn5" parent="White" instance=ExtResource( 13 )]
+position = Vector2( 352, 479.977 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhitePawn6" parent="White" instance=ExtResource( 13 )]
+position = Vector2( 416, 479.977 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhitePawn7" parent="White" instance=ExtResource( 13 )]
+position = Vector2( 480, 479.977 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhitePawn8" parent="White" instance=ExtResource( 13 )]
+position = Vector2( 544, 479.977 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhiteQueen" parent="White" instance=ExtResource( 10 )]
+position = Vector2( 288, 544 )
+scale = Vector2( 0.481203, 0.481203 )
+
+[node name="WhiteRook" parent="White" instance=ExtResource( 12 )]
+position = Vector2( 96.0001, 543.988 )
+scale = Vector2( 0.481202, 0.48138 )
+
+[node name="WhiteRook2" parent="White" instance=ExtResource( 12 )]
+position = Vector2( 544, 544 )
+scale = Vector2( 0.481202, 0.48138 )
