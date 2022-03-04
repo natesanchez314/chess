@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Chess Piece/800px-Chess_Pieces_Sprite.svg.png" type="Texture" id=1]
+[ext_resource path="res://Board/ChessPiece.gd" type="Script" id=2]
 
 [node name="WhiteQueen" type="Sprite"]
 position = Vector2( -1.43051e-06, -1.43051e-06 )
@@ -9,3 +10,6 @@ texture = ExtResource( 1 )
 hframes = 6
 vframes = 2
 frame = 1
+script = ExtResource( 2 )
+type = 1
+value = 9

@@ -1,0 +1,771 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Chess Piece/Black/BlackKing.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Chess Piece/Black/BlackBishop.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Chess Piece/Black/BlackKnight.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Chess Piece/Black/BlackPawn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Chess Piece/Black/BlackQueen.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Chess Piece/Black/BlackRook.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Chess Piece/White/WhiteKing.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Chess Piece/White/WhiteKnight.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Board/ChessState.gd" type="Script" id=9]
+[ext_resource path="res://Chess Piece/White/WhitePawn.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Chess Piece/White/WhiteQueen.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Chess Piece/White/WhiteRook.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Chess Piece/White/WhiteBishop.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Board/Board Square.tscn" type="PackedScene" id=14]
+
+[node name="Chess Board" type="Node2D"]
+position = Vector2( -64, -64 )
+script = ExtResource( 9 )
+
+[node name="Board Visuals" type="Node" parent="."]
+
+[node name="BackGround" type="ColorRect" parent="Board Visuals"]
+margin_right = 512.0
+margin_bottom = 512.0
+mouse_filter = 2
+color = Color( 0.588235, 0.509804, 0.666667, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround2" type="ColorRect" parent="Board Visuals"]
+margin_left = 64.0
+margin_top = 0.0234985
+margin_right = 128.0
+margin_bottom = 64.024
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround3" type="ColorRect" parent="Board Visuals"]
+margin_left = 192.0
+margin_top = 0.0234985
+margin_right = 256.0
+margin_bottom = 64.024
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround4" type="ColorRect" parent="Board Visuals"]
+margin_left = 320.0
+margin_top = 0.0234985
+margin_right = 384.0
+margin_bottom = 64.024
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround5" type="ColorRect" parent="Board Visuals"]
+margin_left = 448.0
+margin_top = 0.0234985
+margin_right = 512.0
+margin_bottom = 64.024
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround6" type="ColorRect" parent="Board Visuals"]
+margin_left = 0.000198364
+margin_top = 64.024
+margin_right = 64.0
+margin_bottom = 128.024
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround7" type="ColorRect" parent="Board Visuals"]
+margin_left = 128.0
+margin_top = 64.024
+margin_right = 192.0
+margin_bottom = 128.024
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround8" type="ColorRect" parent="Board Visuals"]
+margin_left = 256.0
+margin_top = 64.024
+margin_right = 320.0
+margin_bottom = 128.024
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround9" type="ColorRect" parent="Board Visuals"]
+margin_left = 384.0
+margin_top = 64.024
+margin_right = 448.0
+margin_bottom = 128.024
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround10" type="ColorRect" parent="Board Visuals"]
+margin_left = 64.0
+margin_top = 128.024
+margin_right = 128.0
+margin_bottom = 192.023
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround11" type="ColorRect" parent="Board Visuals"]
+margin_left = 192.0
+margin_top = 128.024
+margin_right = 256.0
+margin_bottom = 192.023
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround12" type="ColorRect" parent="Board Visuals"]
+margin_left = 320.0
+margin_top = 128.0
+margin_right = 384.0
+margin_bottom = 192.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround13" type="ColorRect" parent="Board Visuals"]
+margin_left = 448.0
+margin_top = 128.0
+margin_right = 512.0
+margin_bottom = 192.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround14" type="ColorRect" parent="Board Visuals"]
+margin_left = 0.000198364
+margin_top = 192.0
+margin_right = 64.0
+margin_bottom = 256.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround15" type="ColorRect" parent="Board Visuals"]
+margin_left = 128.0
+margin_top = 192.0
+margin_right = 192.0
+margin_bottom = 256.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround16" type="ColorRect" parent="Board Visuals"]
+margin_left = 256.0
+margin_top = 192.0
+margin_right = 320.0
+margin_bottom = 256.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround17" type="ColorRect" parent="Board Visuals"]
+margin_left = 384.0
+margin_top = 192.0
+margin_right = 448.0
+margin_bottom = 256.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround18" type="ColorRect" parent="Board Visuals"]
+margin_left = 64.0
+margin_top = 256.0
+margin_right = 128.0
+margin_bottom = 320.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround19" type="ColorRect" parent="Board Visuals"]
+margin_left = 192.0
+margin_top = 256.0
+margin_right = 256.0
+margin_bottom = 320.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround20" type="ColorRect" parent="Board Visuals"]
+margin_left = 320.0
+margin_top = 256.0
+margin_right = 384.0
+margin_bottom = 320.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround21" type="ColorRect" parent="Board Visuals"]
+margin_left = 448.0
+margin_top = 256.0
+margin_right = 512.0
+margin_bottom = 320.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround22" type="ColorRect" parent="Board Visuals"]
+margin_left = 0.000198364
+margin_top = 320.0
+margin_right = 64.0
+margin_bottom = 384.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround23" type="ColorRect" parent="Board Visuals"]
+margin_left = 128.0
+margin_top = 320.0
+margin_right = 192.0
+margin_bottom = 384.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround24" type="ColorRect" parent="Board Visuals"]
+margin_left = 256.0
+margin_top = 320.0
+margin_right = 320.0
+margin_bottom = 384.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround25" type="ColorRect" parent="Board Visuals"]
+margin_left = 384.0
+margin_top = 320.0
+margin_right = 448.0
+margin_bottom = 384.0
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround26" type="ColorRect" parent="Board Visuals"]
+margin_left = 64.0
+margin_top = 383.977
+margin_right = 128.0
+margin_bottom = 447.977
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround27" type="ColorRect" parent="Board Visuals"]
+margin_left = 192.0
+margin_top = 383.977
+margin_right = 256.0
+margin_bottom = 447.977
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround28" type="ColorRect" parent="Board Visuals"]
+margin_left = 320.0
+margin_top = 383.977
+margin_right = 384.0
+margin_bottom = 447.977
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround29" type="ColorRect" parent="Board Visuals"]
+margin_left = 448.0
+margin_top = 384.023
+margin_right = 512.0
+margin_bottom = 448.023
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround30" type="ColorRect" parent="Board Visuals"]
+margin_left = 0.000198364
+margin_top = 447.977
+margin_right = 64.0
+margin_bottom = 511.977
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround31" type="ColorRect" parent="Board Visuals"]
+margin_left = 128.0
+margin_top = 448.023
+margin_right = 192.0
+margin_bottom = 512.023
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround32" type="ColorRect" parent="Board Visuals"]
+margin_left = 256.0
+margin_top = 448.023
+margin_right = 320.0
+margin_bottom = 512.023
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround33" type="ColorRect" parent="Board Visuals"]
+margin_left = 384.0
+margin_top = 447.977
+margin_right = 448.0
+margin_bottom = 511.977
+mouse_filter = 2
+color = Color( 0.392157, 0.196078, 0.627451, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Board Squares" type="Node" parent="."]
+
+[node name="Board Square" parent="Board Squares" instance=ExtResource( 14 )]
+
+[node name="BlackRook" parent="Board Squares/Board Square" instance=ExtResource( 6 )]
+show_behind_parent = true
+position = Vector2( -3.8147e-06, -7.62939e-06 )
+scale = Vector2( 0.481203, 0.48138 )
+centered = false
+
+[node name="Board Square2" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 64, 0 )
+
+[node name="BlackKnight" parent="Board Squares/Board Square2" instance=ExtResource( 3 )]
+position = Vector2( 7.62939e-06, 3.8147e-06 )
+scale = Vector2( 0.481203, 0.481026 )
+centered = false
+
+[node name="Board Square3" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 128, 0 )
+
+[node name="BlackBishop" parent="Board Squares/Board Square3" instance=ExtResource( 2 )]
+position = Vector2( 0, -3.8147e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square4" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 192, 0 )
+
+[node name="BlackQueen" parent="Board Squares/Board Square4" instance=ExtResource( 5 )]
+position = Vector2( 0, -3.8147e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square5" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 256, 0 )
+
+[node name="BlackKing" parent="Board Squares/Board Square5" instance=ExtResource( 1 )]
+position = Vector2( 0, 7.62939e-06 )
+scale = Vector2( 0.481202, 0.481203 )
+centered = false
+
+[node name="Board Square6" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 320, 0 )
+
+[node name="BlackBishop2" parent="Board Squares/Board Square6" instance=ExtResource( 2 )]
+position = Vector2( 0, -3.8147e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square7" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 384, 0 )
+
+[node name="BlackKnight2" parent="Board Squares/Board Square7" instance=ExtResource( 3 )]
+position = Vector2( 0, 1.90735e-06 )
+scale = Vector2( 0.481203, 0.481026 )
+centered = false
+
+[node name="Board Square8" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 448, 0 )
+
+[node name="BlackRook2" parent="Board Squares/Board Square8" instance=ExtResource( 6 )]
+position = Vector2( 0, -3.8147e-06 )
+scale = Vector2( 0.481203, 0.48138 )
+centered = false
+
+[node name="Board Square9" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 0, 64 )
+
+[node name="BlackPawn" parent="Board Squares/Board Square9" instance=ExtResource( 4 )]
+position = Vector2( -3.8147e-06, -7.62939e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square10" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 64, 64 )
+
+[node name="BlackPawn2" parent="Board Squares/Board Square10" instance=ExtResource( 4 )]
+position = Vector2( -7.62939e-06, -7.62939e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square11" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 128, 64 )
+
+[node name="BlackPawn3" parent="Board Squares/Board Square11" instance=ExtResource( 4 )]
+position = Vector2( -1.52588e-05, -7.62939e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square12" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 192, 64 )
+
+[node name="BlackPawn4" parent="Board Squares/Board Square12" instance=ExtResource( 4 )]
+position = Vector2( 0, -7.62939e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square13" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 256, 64 )
+
+[node name="BlackPawn5" parent="Board Squares/Board Square13" instance=ExtResource( 4 )]
+position = Vector2( 0, -7.62939e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square14" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 320, 64 )
+
+[node name="BlackPawn6" parent="Board Squares/Board Square14" instance=ExtResource( 4 )]
+position = Vector2( 0, -7.62939e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square15" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 384, 64 )
+
+[node name="BlackPawn7" parent="Board Squares/Board Square15" instance=ExtResource( 4 )]
+position = Vector2( 0, -7.62939e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square16" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 448, 64 )
+
+[node name="BlackPawn8" parent="Board Squares/Board Square16" instance=ExtResource( 4 )]
+position = Vector2( 0, -7.62939e-06 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square17" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 0, 128 )
+
+[node name="Board Square18" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 64, 128 )
+
+[node name="Board Square19" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 128, 128 )
+
+[node name="Board Square20" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 192, 128 )
+
+[node name="Board Square21" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 256, 128 )
+
+[node name="Board Square22" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 320, 128 )
+
+[node name="Board Square23" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 384, 128 )
+
+[node name="Board Square24" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 448, 128 )
+
+[node name="Board Square25" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 0, 192 )
+
+[node name="Board Square26" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 64, 192 )
+
+[node name="Board Square27" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 128, 192 )
+
+[node name="Board Square28" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 192, 192 )
+
+[node name="Board Square29" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 256, 192 )
+
+[node name="Board Square30" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 320, 192 )
+
+[node name="Board Square31" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 384, 192 )
+
+[node name="Board Square32" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 448, 192 )
+
+[node name="Board Square33" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 0, 256 )
+
+[node name="Board Square34" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 64, 256 )
+
+[node name="Board Square35" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 128, 256 )
+
+[node name="Board Square36" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 192, 256 )
+
+[node name="Board Square37" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 256, 256 )
+
+[node name="Board Square38" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 320, 256 )
+
+[node name="Board Square39" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 384, 256 )
+
+[node name="Board Square40" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 448, 256 )
+
+[node name="Board Square41" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 0, 320 )
+
+[node name="Board Square42" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 64, 320 )
+
+[node name="Board Square43" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 128, 320 )
+
+[node name="Board Square44" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 192, 320 )
+
+[node name="Board Square45" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 256, 320 )
+
+[node name="Board Square46" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 320, 320 )
+
+[node name="Board Square47" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 384, 320 )
+
+[node name="Board Square48" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 448, 320 )
+
+[node name="Board Square49" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 0, 384 )
+
+[node name="WhitePawn" parent="Board Squares/Board Square49" instance=ExtResource( 10 )]
+position = Vector2( -3.8147e-06, 0 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square50" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 64, 384 )
+
+[node name="WhitePawn2" parent="Board Squares/Board Square50" instance=ExtResource( 10 )]
+position = Vector2( -0.000106812, 0 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square51" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 128, 384 )
+
+[node name="WhitePawn3" parent="Board Squares/Board Square51" instance=ExtResource( 10 )]
+position = Vector2( -0.000106812, 0 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square52" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 192, 384 )
+
+[node name="WhitePawn4" parent="Board Squares/Board Square52" instance=ExtResource( 10 )]
+position = Vector2( -9.15527e-05, 0 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square53" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 256, 384 )
+
+[node name="WhitePawn5" parent="Board Squares/Board Square53" instance=ExtResource( 10 )]
+position = Vector2( -9.15527e-05, 0 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square54" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 320, 384 )
+
+[node name="WhitePawn6" parent="Board Squares/Board Square54" instance=ExtResource( 10 )]
+position = Vector2( -0.00012207, 0 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square55" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 384, 384 )
+
+[node name="WhitePawn7" parent="Board Squares/Board Square55" instance=ExtResource( 10 )]
+position = Vector2( -0.00012207, 0 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square56" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 448, 384 )
+
+[node name="WhitePawn8" parent="Board Squares/Board Square56" instance=ExtResource( 10 )]
+position = Vector2( -0.00012207, 0 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square57" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 0, 448 )
+
+[node name="WhiteRook" parent="Board Squares/Board Square57" instance=ExtResource( 12 )]
+position = Vector2( 0, 0 )
+scale = Vector2( 0.481202, 0.48138 )
+centered = false
+
+[node name="Board Square58" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 64, 448 )
+
+[node name="WhiteKnight" parent="Board Squares/Board Square58" instance=ExtResource( 8 )]
+position = Vector2( -0.000106812, 0.0240479 )
+scale = Vector2( 0.481203, 0.48138 )
+centered = false
+
+[node name="Board Square59" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 128, 448 )
+
+[node name="WhiteBishop" parent="Board Squares/Board Square59" instance=ExtResource( 13 )]
+position = Vector2( -9.15527e-05, 0.0240479 )
+scale = Vector2( 0.481203, 0.481027 )
+centered = false
+
+[node name="Board Square60" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 192, 448 )
+
+[node name="WhiteQueen" parent="Board Squares/Board Square60" instance=ExtResource( 11 )]
+position = Vector2( -9.15527e-05, 0.0120239 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square61" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 256, 448 )
+
+[node name="WhiteKing" parent="Board Squares/Board Square61" instance=ExtResource( 7 )]
+position = Vector2( -9.15527e-05, 0.0120239 )
+scale = Vector2( 0.481203, 0.481203 )
+centered = false
+
+[node name="Board Square62" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 320, 448 )
+
+[node name="WhiteBishop2" parent="Board Squares/Board Square62" instance=ExtResource( 13 )]
+position = Vector2( -0.00012207, 0.0120239 )
+scale = Vector2( 0.481203, 0.481027 )
+centered = false
+
+[node name="Board Square63" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 384, 448 )
+
+[node name="WhiteKnight2" parent="Board Squares/Board Square63" instance=ExtResource( 8 )]
+position = Vector2( -0.00012207, 0.0120239 )
+rotation = 0.00713085
+scale = Vector2( 0.481203, 0.48138 )
+centered = false
+
+[node name="Board Square64" parent="Board Squares" instance=ExtResource( 14 )]
+position = Vector2( 448, 448 )
+
+[node name="WhiteRook2" parent="Board Squares/Board Square64" instance=ExtResource( 12 )]
+position = Vector2( 0, -0.0230103 )
+scale = Vector2( 0.481202, 0.48138 )
+centered = false

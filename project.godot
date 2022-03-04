@@ -8,14 +8,30 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "ChessPiece",
+"language": "GDScript",
+"path": "res://Board/ChessPiece.gd"
+} ]
+_global_script_class_icons={
+"ChessPiece": ""
+}
+
 [application]
 
 config/name="Chess"
-run/main_scene="res://Chess Board.tscn"
+run/main_scene="res://Board/Chess Board.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+ChessState="*res://Board/ChessState.gd"
 
 [display]
 
+window/size/width=510
+window/size/height=510
 window/size/resizable=false
 
 [physics]

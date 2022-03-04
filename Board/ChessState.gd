@@ -1,5 +1,7 @@
 extends Node2D
 
+var selectedPiece = null
+
 var chessState = [
 	[null, null, null, null, null, null, null, null],
 	[null, null, null, null, null, null, null, null],
@@ -13,3 +15,4 @@ var chessState = [
 
 func _ready():
 	pass
+

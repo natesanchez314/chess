@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="Board" type="Node2D"]
+
+[node name="White nodes" type="Node" parent="."]
+
+[node name="WhiteSquare" type="Node2D" parent="White nodes"]
+
+[node name="Sprite" type="Sprite" parent="White nodes/WhiteSquare"]
+
+[node name="Black nodes" type="Node" parent="."]
+
+[node name="Node2D" type="Node2D" parent="Black nodes"]
